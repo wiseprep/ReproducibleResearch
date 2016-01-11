@@ -79,8 +79,8 @@ of associated `interval` value, these 0 values are removed from the histogram
 of total number of steps taken each day.
 
 ## Are there differences in activity patterns between weekdays and weekends?
-First, let's find the day of the week for each measurement in the dataset. In
-this part, we use the dataset with the filled-in values.
+Create a new factor variable in the dataset with two levels – “weekday” and “weekend” 
+indicating whether a given date is a weekday or weekend day.
 
 ```{r}
 weekday.or.weekend <- function(date) {
@@ -96,8 +96,8 @@ filled.data$date <- as.Date(filled.data$date)
 filled.data$day <- sapply(filled.data$date, FUN=weekday.or.weekend)
 ```
 
-Now, let's make a panel plot containing plots of average number of steps taken
-on weekdays and weekends.
+Make a panel plot containing a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) 
+and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).
 ```{r}
 averages <- aggregate(steps ~ interval + day, data=filled.data, mean)
 ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(day ~ .) +

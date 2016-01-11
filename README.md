@@ -88,9 +88,12 @@ Show any code that is needed to
 For this part of the assignment, you can ignore the missing values in
 the dataset.
 
-1. Make a histogram of the total number of steps taken each day
+1. Calculate the total number of steps taken per day
 
-2. Calculate and report the **mean** and **median** total number of steps taken per day
+2. If you do not understand the difference between a histogram and a barplot, 
+research the difference between them. Make a histogram of the total number of steps taken each day
+
+3. Calculate and report the mean and median of the total number of steps taken per day 
 
 
 ### What is the average daily activity pattern?
@@ -124,14 +127,6 @@ the dataset with the filled-in missing values for this part.
 
 1. Make a panel plot containing a time series plot (i.e. `type = "l"`) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). The plot should look something like the following, which was created using **simulated data**:
 
-![Sample panel plot](instructions_fig/sample_panelplot.png) 
-
-
-**Your plot will look different from the one above** because you will
-be using the activity monitor data. Note that the above plot was made
-using the lattice system but you can make the same version of the plot
-using any plotting system you choose.
-
 
 ## Submitting the Assignment
 
@@ -162,7 +157,7 @@ in GitHub by doing the following:
 A valid submission will look something like (this is just an **example**!)
 
 ```r
-https://github.com/rdpeng/RepData_PeerAssessment1
+https://github.com/rdpeng/RepData_PeerAssessment17c376cc54
 
-7c376cc5447f11537f8740af8e07d6facc3d9645
+47f11537f8740af8e07d6facc3d9645
 ```
